@@ -1,8 +1,8 @@
 /*******************************************************************************
-* File Name: cycfg.h
+* File Name: cycfg_peripherals.h
 *
 * Description:
-* Simple wrapper header containing all generated files.
+* Peripheral Hardware Block configuration
 * This file was automatically generated and should not be modified.
 * Tools Package 2.2.0.2801
 * mtb-pdl-cat2-release-v1.1.0 1.1.0.2932
@@ -26,26 +26,32 @@
 * limitations under the License.
 ********************************************************************************/
 
-#if !defined(CYCFG_H)
-#define CYCFG_H
+#if !defined(CYCFG_PERIPHERALS_H)
+#define CYCFG_PERIPHERALS_H
+
+#include "cycfg_notices.h"
+#include "cy_usbpd_common.h"
+#include "cy_sysclk.h"
 
 #if defined(__cplusplus)
 extern "C" {
 #endif
 
-#include "cycfg_notices.h"
-#include "cycfg_system.h"
-#include "cycfg_clocks.h"
-#include "cycfg_routing.h"
-#include "cycfg_peripherals.h"
-#include "cycfg_pins.h"
+#define PD_PORT0_ENABLED 1U
+#define mtb_usbpd_port0_HW PDSS0
+#define mtb_usbpd_port0_HW_TRIM PDSS_TRIMS0
+#define mtb_usbpd_port0_IRQ usbpd_0_interrupt_IRQn
+#define mtb_usbpd_port0_DS_IRQ usbpd_0_interrupt_wakeup_IRQn
 
-void init_cycfg_all(void);
+extern cy_stc_fault_vbus_ovp_cfg_t mtb_usbpd_port0_ovp_config;
+extern cy_stc_fault_vbus_uvp_cfg_t mtb_usbpd_port0_uvp_config;
+extern cy_stc_usbpd_config_t mtb_usbpd_port0_config;
 
+void init_cycfg_peripherals(void);
 
 #if defined(__cplusplus)
 }
 #endif
 
 
-#endif /* CYCFG_H */
+#endif /* CYCFG_PERIPHERALS_H */

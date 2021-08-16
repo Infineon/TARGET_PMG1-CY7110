@@ -5,9 +5,9 @@
 * Wrapper function to initialize all generated code.
 * This file was automatically generated and should not be modified.
 * Tools Package 2.2.0.2801
-* mtb-pdl-cat2 1.1.0.2839
+* mtb-pdl-cat2-release-v1.1.0 1.1.0.2932
 * personalities 3.0.0.0
-* udd 3.0.0.912
+* udd 3.0.0.929
 *
 ********************************************************************************
 * Copyright 2021 Cypress Semiconductor Corporation
@@ -31,6 +31,8 @@
 void init_cycfg_all(void)
 {
 	init_cycfg_system();
+	init_cycfg_clocks();
 	init_cycfg_routing();
+	init_cycfg_peripherals();
 	init_cycfg_pins();
 }
