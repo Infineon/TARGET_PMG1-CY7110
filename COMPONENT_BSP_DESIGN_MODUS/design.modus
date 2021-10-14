@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Design version="12" xmlns="http://cypress.com/xsd/cydesignfile_v3">
-    <ToolInfo version="2.2.0.2801"/>
+    <ToolInfo version="2.4.0.5721"/>
     <Devices>
         <Device mpn="CYPM1011-24LQXI">
             <BlockConfig>
@@ -171,17 +171,17 @@
                     <Port name="usbpd[0].clock_rx[0]"/>
                 </Net>
                 <Net>
-                    <Port name="peri[0].div_8[1].clk[0]"/>
-                    <Port name="usbpd[0].clock_refgen[0]"/>
-                    <Port name="usbpd[0].clock_tx[0]"/>
-                </Net>
-                <Net>
                     <Port name="peri[0].div_8[2].clk[0]"/>
                     <Port name="usbpd[0].clock_sar[0]"/>
                 </Net>
                 <Net>
                     <Port name="peri[0].div_8[3].clk[0]"/>
                     <Port name="usbpd[0].clock_filter1[0]"/>
+                </Net>
+                <Net>
+                    <Port name="peri[0].div_8[1].clk[0]"/>
+                    <Port name="usbpd[0].clock_refgen[0]"/>
+                    <Port name="usbpd[0].clock_tx[0]"/>
                 </Net>
             </Netlist>
         </Device>

@@ -4,13 +4,14 @@
 * Description:
 * Clock configuration
 * This file was automatically generated and should not be modified.
-* Tools Package 2.2.0.2801
-* mtb-pdl-cat2-release-v1.1.0 1.1.0.2932
-* personalities 3.0.0.0
-* udd 3.0.0.929
+* Tools Package 2.4.0.5721
+* mtb-pdl-cat2 1.4.0.5338
+* personalities 5.0.0.0
+* udd 3.0.0.1428
 *
 ********************************************************************************
-* Copyright 2021 Cypress Semiconductor Corporation
+* Copyright 2021 Cypress Semiconductor Corporation (an Infineon company) or
+* an affiliate of Cypress Semiconductor Corporation.
 * SPDX-License-Identifier: Apache-2.0
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
@@ -32,7 +33,7 @@
 #include "cycfg_notices.h"
 #include "cy_sysclk.h"
 #if defined (CY_USING_HAL)
-	#include "cyhal_hwmgr.h"
+    #include "cyhal_hwmgr.h"
 #endif //defined (CY_USING_HAL)
 
 #if defined(__cplusplus)
@@ -56,19 +57,19 @@ extern "C" {
 #define peri_0_div_8_3_NUM 3U
 
 #if defined (CY_USING_HAL)
-	extern const cyhal_resource_inst_t peri_0_div_16_0_obj;
+    extern const cyhal_resource_inst_t peri_0_div_16_0_obj;
 #endif //defined (CY_USING_HAL)
 #if defined (CY_USING_HAL)
-	extern const cyhal_resource_inst_t peri_0_div_8_0_obj;
+    extern const cyhal_resource_inst_t peri_0_div_8_0_obj;
 #endif //defined (CY_USING_HAL)
 #if defined (CY_USING_HAL)
-	extern const cyhal_resource_inst_t peri_0_div_8_1_obj;
+    extern const cyhal_resource_inst_t peri_0_div_8_1_obj;
 #endif //defined (CY_USING_HAL)
 #if defined (CY_USING_HAL)
-	extern const cyhal_resource_inst_t peri_0_div_8_2_obj;
+    extern const cyhal_resource_inst_t peri_0_div_8_2_obj;
 #endif //defined (CY_USING_HAL)
 #if defined (CY_USING_HAL)
-	extern const cyhal_resource_inst_t peri_0_div_8_3_obj;
+    extern const cyhal_resource_inst_t peri_0_div_8_3_obj;
 #endif //defined (CY_USING_HAL)
 
 void init_cycfg_clocks(void);
